@@ -106,6 +106,15 @@ body {
     animation: scaleIn 0.8s ease-out;
     transition: transform 0.3s ease;
     overflow: hidden;
+    user-select: none;
+}
+
+.profile-image img {
+    user-select: none;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 .profile-image:hover {

@@ -1,3 +1,10 @@
+// Protect profile image from downloading
+const profileImage = document.querySelector('.profile-image img');
+if (profileImage) {
+    profileImage.addEventListener('contextmenu', (e) => e.preventDefault());
+    profileImage.addEventListener('dragstart', (e) => e.preventDefault());
+}
+
 // Animation on click
 document.querySelectorAll('.link-card').forEach(card => {
     card.addEventListener('click', function(e) {
